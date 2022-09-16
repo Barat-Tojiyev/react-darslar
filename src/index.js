@@ -1,11 +1,38 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import App from './App.jsx'
 
 
+const tuplam=[
+  {
+    firstName:'Elshoda',
+    lastName:'Bahodirova',
+    age:14
+  },
+  {
+    firstName:'Farrux',
+    lastName:'Bo\'riboyev',
+    age:17
+  },
+  {
+    firstName:'Shaxzod',
+    lastName:'Mamadaminov',
+    age:17
+  }
+]
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-<h1>Dars-3</h1>
+{
+  tuplam.map((value)=>{
+    return(
+      <App title={value}/>
+    )
+      
+  })
+  }
+
+
   </React.StrictMode>
 );
 
