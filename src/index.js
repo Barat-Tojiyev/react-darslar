@@ -1,24 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App.jsx'
-
-
 const tuplam=[
   {
     firstName:'Elshoda',
     lastName:'Bahodirova',
     age:14
-  },
-  {
-    firstName:'Farrux',
-    lastName:'Bo\'riboyev',
-    age:17
-  },
-  {
-    firstName:'Shaxzod',
-    lastName:'Mamadaminov',
-    age:17
-  }
+  }  
 ]
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -28,11 +16,7 @@ root.render(
     return(
       <App title={value}/>
     )
-      
-  })
-  }
-
-
+        })}
   </React.StrictMode>
 );
 
