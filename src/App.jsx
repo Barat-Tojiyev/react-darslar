@@ -1,10 +1,18 @@
 import React, { Component } from 'react';
 import { Container } from './Counter/AppStyle';
+import {ThemePriveder,createGlobalStyle} from 'styled-components'
+ 
+const darkMode=createGlobalStyle`
+  
+`
+const theme={
 
+}
 class App extends Component {
     render() {
-        return (
-            <div>
+        return (            
+              <ThemePriveder theme={theme}>
+                <darkMode/>
                 <Container bg="red"                   
                 
                 color='yellow'
@@ -13,7 +21,8 @@ class App extends Component {
                     <Container.Title>Salom</Container.Title>
                     <Container.Btn>Login</Container.Btn>
                 </Container>
-            </div>
+                </ThemePriveder>
+            
         );
     }
 }
